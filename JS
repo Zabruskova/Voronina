@@ -1,492 +1,63 @@
-получилось?
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.body {
-    font-family: 'Lato', sans-serif;
-}
-
-.center {
-    padding-left: calc(50% - 570px);
-    padding-right: calc(50% - 570px);
-}
-
-.header {
-    background: #222222;
-    height: 75px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header__search {
-    margin-left: 41px;
-}
-
-.header__icons:not(:last-child) {
-    margin-right: 33px;
-}
-
-.content {
-    background: #F1E4E6;
-    display: flex;
-    padding-left: calc(50% - 800px);
-    padding-right: calc(50% - 800px);
-}
-
-.content__img {
-    width: 50%;
-}
-
-.content__photo {
-    width: 100%;
-}
-
-.content__promo__h1 {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 58px;
-    color: #222222;
-}
-
-.content__promo__h3 {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 38px;
-    color: #222222;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.content__promo__word {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 38px;
-    color: #F16D7F;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.content__text {
-    padding-top: 16%;
-}
-
-.content__promo {
-    border-left: 12px solid #F16D7F;
-    padding-left: 16px;
-}
-
-.sale {
-    margin-top: 64px;
-    margin-bottom: 96px;
-}
-
-.sale__item {
-    height: 260px;
-    flex-grow: 1;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.sale__item1 {
-    background-image: url(../img/sale1.jpg);
-}
-
-.sale__item2 {
-    background-image: url(../img/sale2.jpg);
-}
-
-.sale__item3 {
-    background-image: url(../img/sale3.jpg);
-}
-
-.sale__top {
-    display: flex;
-    gap: 30px;
-}
-
-.sale__bottom {
-    height: 180px;
-    background-image: url(../img/sale4.jpg);
-    margin-top: 30px;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.sale__text {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.sale__heading {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: center;
-    color: #F16D7F;
-}
-
-.heading {
-    margin-top: 96px;
-    margin-bottom: 48px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.heading__h2 {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 36px;
-    color: #222222;
-}
-
-.heading__text {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    color: #9F9F9F;
-    padding-top: 6px;
-}
-
-.catalog {
-    gap: 30px;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-}
-
-.catalog__img {
-    width: 100%;
-}
-
-.catalog__product:hover .catalog__add {
-    display: flex;
-}
-
-.catalog__product:hover .catalog__img {
-    filter: brightness(0.5);
-}
-
-.catalog__product:hover .catalog__add {
-    display: flex;
-}
-
-.catalog__link {
-    display: flex;
-}
-
-a {
-    text-decoration: none;
-}
-
-.catalog__name {
-    padding-top: 26px;
-    padding-bottom: 12px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 16px;
-    color: #000000;
-}
-
-.catalog__text {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #5D5D5D;
-    width: 316px;
-}
-
-.catalog__price {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    color: #F16D7F;
-    padding-top: 18px;
-    padding-bottom: 20px;
-}
-
-.catalog__product {
-    background: #F8F8F8;
-    position: relative;
-}
-
-.catalog__add {
-    position: absolute;
-    top: 188px;
-    left: 111px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    color: #FFFFFF;
-    border: 1px solid #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 138px;
-    height: 44px;
-    display: none;
-}
-
-.catalog__add:hover {
-    background-color: #fff;
-    color: #000000;
-}
-
-.catalog__add:hover .catalog__cart path {
-    fill: black;
-}
-
-.catalog__cart {
-    margin-right: 11px;
-}
-
-.button {
-    border: 1px solid #FF6A6A;
-    height: 47px;
-    width: 211px;
-    background: white;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    color: #F26376;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-
-}
-
-.button:hover {
-    background-color: #F16D7F;
-    color: #FFFFFF;
-}
-
-.catalog__button {
-    display: flex;
-    justify-content: center;
-    margin-top: 49px;
-    margin-bottom: 96px;
-}
-
-.footer__top {
-    background: #222224;
-    height: 341px;
-    display: flex;
-    justify-content: center;
-}
-
-.footer__top__h4 {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 19.96px;
-    line-height: 24px;
-    color: #FBFBFB;
-}
-
-.footer__top__option {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-.footer__top__text {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 13.972px;
-    line-height: 17px;
-    text-align: center;
-    width: 360px;
-    color: #FBFBFB;
-    padding-top: 16px;
-}
-
-.footer__top__img1 {
-    padding-bottom: 28px;
-}
-
-.footer__top__img2 {
-    padding-bottom: 19px;
-}
-
-.footer__top__img3 {
-    padding-bottom: 25px;
-}
-
-.footer__bottom {
-    height: 448px;
-    display: flex;
-    background-position-y: bottom;
-    background-position-x: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    justify-content: space-around;
-    align-items: center;
-    background-image: url(../img/subscribe.svg);
-}
-
-.footer__bottom__review {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer__bottom__review__p {
-    width: 360px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #222224;
-}
-
-.footer__bottom__review__img {
-    width: 24%;
-    margin-bottom: 20px;
-}
-
-.footer__bottom__email {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.footer__bottom__email__h2 {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 167.2%;
-    text-align: center;
-    color: #222224;
-}
-
-.footer__bottom__email__word {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 167%;
-    text-align: center;
-    color: #222224;
-}
-
-.footer__bottom__form {
-    margin-top: 32px;
-    height: 49px;
-    display: flex;
-}
-
-.footer__bottom__form__email {
-    background: #E1E1E1;
-    height: 50px;
-    width: 256px;
-    border: 1px solid #e1e1e1;
-    border-radius: 50px 0 0 50px;
-
-}
-
-.footer__bottom__form__submit {
-    background: #F16D7F;
-    border: 1px solid #F16D7F;
-    border-radius: 0 50px 50px 0;
-    height: 52px;
-    width: 100px;
-    color: white;
-}
-
-.footer__copy {
-    background: #222224;
-    height: 80px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.footer__copy__text {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FBFBFB;
-}
-
-.footer__copy__links1 {
-    gap: 8px;
-}
-
-.footer__copy__links:hover .footer__copy__links__img path {
-    fill: #F16D7F;
-}
-
-.footer__copy__links__img:hover .footer__copy__links__img1 g {
-    fill: white;
-}
-.breadcrumbs {
-    background: #F8F3F4;
-    height: 148px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.breadcrumbs__heading {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 29px;
-    color: #F16D7F;
-}
-.breadcrumbs__nav {
-    display: flex;
-    list-style-type: none;
-
-}
-.breadcrumbs__link {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #636363;
-}
-.breadcrumbs__link:hover {
-    color: #F16D7F;
-}
-.breadcrumbs__list:not(:last-child):after {
-    content: "/";
-    color: #636363;
-    padding-left: 8px;
-    padding-right: 8px;
-}
-.breadcrumbs__list:last-child a {
-    font-weight: bold;
-    color: #F16D7F;
-}
-.products {
-    gap: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*1 Задать температуру в градусах по Цельсию. Вывести в alert соответствующую температуру в
+градусах по Фаренгейту. Подсказка: расчёт идёт по формуле:
+Tf = (9 / 5) * Tc + 32;
+где Tf – температура по Фаренгейту, Tc – температура по Цельсию*/
+    "use strict";
+    let Tc = +prompt("Укажите температуру в градусах Цельсия. Сейчас мы узнаем сколько это будет градусов по Фаренгейту ");
+    let Tf = ((9 / 5) * Tc + 32).toFixed(1);
+    alert (Tc + " градусов по Цельсию будут равны " + Tf + " градусам по Фаренгейту.");
+    /*2 Объявить две переменные: admin и name. Записать в name строку "Василий". Скопировать
+значение из name в admin. Вывести в консоль переменную admin (должно вывести "Василий").*/
+    let name = "Василий";    
+    let admin = name;
+    console.log (admin);
+    /*3 Вывести в консоль значения выражений и объяснить почему получились такие значения
+используя комментарии к каждому выражению:
+10 + 10 + "10";
+10 + "10" + 10;
+10 + 10 + +"10"; (обратите внимание на пробелы, пишите также)
+10 / -"";
+10 / +"2,5"; (да здесь запятая, это не опечатка)*/
+        let result = 10 + 10 + "10";
+        console.log (result); 
+/* 10 прибавляем 10 и получаем 20
+Склеиваем строки 20 и 10. Получаем 2010
+2010 присваиваем переменной result
+Через console.log выводим result в консоль*/
+        let result1 = 10 + "10" + 10;
+        console.log (result1); 
+/* Значение в кавычках не является числом
+Склеиваем строки 10, 10 и 10. Получаем 101010
+101010 присваиваем переменной result1
+Через console.log выводим result1 в консоль*/
+        let result2 = 10 + 10 + +"10";
+        console.log (result2); 
+/* Складываем 10 и 10. Получаем 20
+Унарный + приводит строчные данные "10" в чиловые 10
+Прибавляем 10 к 20. Получаем 30
+30 присваиваем переменной result2
+Через console.log выводим result2 в консоль*/
+        let result3 = 10 / -"";
+        console.log (result3); 
+/* Унарный минус приводит значение в кавычках к -0
+Делить на 0 нельзя. У нас значение -0. Получаем -Infinity
+-Infinity присваиваем переменной result3
+Через console.log выводим result3 в консоль*/  
+        let result4 = 10 / +"2,5";
+        console.log (result4); 
+/* Значение в кавычках не является числом. Унарный плюс не может преобразовать строку "2,5" из-за наличия запятой
+Т.к. число 10 мы не можем разделить на строку. Получаем NaN
+NaN присваиваем переменной result4
+Через console.log выводим result4 в консоль*/    
+    </script>
+</body>
+</html>
